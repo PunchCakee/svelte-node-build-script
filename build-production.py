@@ -22,7 +22,7 @@ shutil.copy2("package-lock.json",'build')
 
 
 with cd('build/'):
-    subprocess.run(["npm","ci","--omit dev"], shell=True,stdout=True)
+    subprocess.run(["npm","ci","--omit","dev"], shell=True,stdout=True)
 
 
 
